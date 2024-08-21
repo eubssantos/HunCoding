@@ -1,13 +1,16 @@
 package main
 
 import (
+	"HunCoding/src/main/configuration/logger"
 	"HunCoding/src/main/controller/routes"
+	"log"
+
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"log"
 )
 
 func main() {
+	logger.Info("About to start user application")
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
