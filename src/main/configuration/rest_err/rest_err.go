@@ -27,7 +27,7 @@ func NewRestErr(message string, err string, code int, causes []Causes) *RestErr 
 	}
 }
 
-func NewBadRequest(message string) *RestErr {
+func NewBadRequestError(message string) *RestErr {
 	return &RestErr{
 		Message: message,
 		Err:     "bad request",

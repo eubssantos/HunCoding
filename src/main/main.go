@@ -1,7 +1,7 @@
 package main
 
 import (
-	"HunCoding/src/main/route"
+	"HunCoding/src/main/controller/routes"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"log"
@@ -15,7 +15,7 @@ func main() {
 
 	router := gin.Default()
 
-	route.InitRoutes(&router.RouterGroup)
+	routes.InitRoutes(&router.RouterGroup)
 
 	if err := router.Run(":8080"); err != nil {
 		log.Fatal(err)
