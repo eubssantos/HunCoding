@@ -6,8 +6,8 @@ import (
 	"errors"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/locales/en"
-	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
+	ut "github.com/go-playground/universal-translator"
 	entranslation "github.com/go-playground/validator/v10/translations/en"
 )
 
